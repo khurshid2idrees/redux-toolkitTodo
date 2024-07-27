@@ -7,6 +7,8 @@ function Todos() {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.todo?.todos);
 
+  console.log(todos,'kd')
+
   const handleRemove = (e, id) => {
     console.log(id, "kd id ");
 
@@ -18,7 +20,7 @@ function Todos() {
   return (
     <>
       <div>Todos</div>
-      {todos.length1 ? (
+      {todos.length ? (
         <ul className="list-none">
           {todos?.map((todo) => {
             return (
